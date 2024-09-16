@@ -38,7 +38,7 @@ stty stop undef
 
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[1;32m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[00m\]\[\033[1;31m\]$(__git_ps1)\[\033[00m\] \$ '
-export PATH="/home/$(whoami)/.krew/bin:/home/$(whoami)/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/$(whoami)/.local/bin:/home/$(whoami)/bin"
+export PATH="/usr/local/go:/usr/local/go/bin:/home/$(whoami)/.krew/bin:/home/$(whoami)/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/$(whoami)/.local/bin:/home/$(whoami)/bin"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/usr/local/google-cloud-sdk/path.bash.inc' ]; then . '/usr/local/google-cloud-sdk/path.bash.inc'; fi
@@ -47,3 +47,5 @@ if [ -f '/usr/local/google-cloud-sdk/path.bash.inc' ]; then . '/usr/local/google
 if [ -f '/usr/local/google-cloud-sdk/completion.bash.inc' ]; then . '/usr/local/google-cloud-sdk/completion.bash.inc'; fi
 
 HISTSIZE=1000000
+
+export GOPATH="/usr/local/go"
